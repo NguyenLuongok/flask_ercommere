@@ -1,0 +1,1703 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<main class="mainContent-theme  main-index ">
+	<h1 class="hidden entry-title">Modern Furniture</h1>
+
+	<div id="home-slider">
+		<div id="homepage_slider" class="owl-carousel">
+			<div class="item ">
+				<a class="ratiobox" href="collections/all.html" title="Sản phẩm nổi bật" aria-label="Banner 1">
+					<picture>
+						<source media="(max-width: 480px)"
+							srcset="{{url_for('static', filename='images/slider/slideshow_1_largee0a8.jpg')}}">
+						<source media="(min-width: 481px)"
+							srcset="{{url_for('static', filename='images/slider/slideshow_1e0a8.jpg')}}">
+						<img src="{{url_for('static', filename='images/slider/slideshow_1e0a8.jpg')}}"
+							alt="Sản phẩm nổi bật">
+					</picture>
+				</a>
+			</div>
+			<div class="item ">
+				<a class="ratiobox" href="collections/all.html" title="Sản phẩm nổi bật" aria-label="Banner 2">
+					<picture>
+						<source class="owl-lazy" media="(max-width: 480px)"
+							data-srcset="{{url_for('static', filename='images/slider/slideshow_2_largee0a8.jpg')}}"
+							srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+						<source class="owl-lazy" media="(min-width: 481px)"
+							data-srcset="{{url_for('static', filename='images/slider/slideshow_2e0a8.jpg')}}"
+							srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+						<img class="owl-lazy"
+							data-src="{{url_for('static', filename='images/slider/slideshow_2e0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Sản phẩm nổi bật">
+					</picture>
+				</a>
+			</div>
+			<div class="item ">
+				<a class="ratiobox" href="collections/all.html" title="Sản phẩm nổi bật" aria-label="Banner 3">
+					<picture>
+						<source class="owl-lazy" media="(max-width: 480px)"
+							data-srcset="{{url_for('static', filename='images/slider/slideshow_3_largee0a8.jpg')}}"
+							srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+						<source class="owl-lazy" media="(min-width: 481px)"
+							data-srcset="{{url_for('static', filename='images/slider/slideshow_3e0a8.jpg')}}"
+							srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+						<img class="owl-lazy"
+							data-src="{{url_for('static', filename='images/slider/slideshow_3e0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Sản phẩm nổi bật">
+					</picture>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-home-banner-top">
+		<div class="list-slider-banner owl-carousel">
+			<div class="home-banner-pd">
+				<div class="block-banner-category ">
+					<a class="link-banner ratiobox" href="collections/all.html" aria-label="Banner 1">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/banner/home_category_1_bannere0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/banner/home_category_1_bannere0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="banner 1">
+					</a>
+
+					<div class="caption_banner_slide">
+						<h3>Phòng khách tối giản</h3>
+						<a class="button" href="collections/all.html">Xem ngay</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="home-banner-pd">
+				<div class="block-banner-category ">
+					<a class="link-banner ratiobox" href="collections/all.html" aria-label="Banner 2">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/banner/home_category_2_bannere0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/banner/home_category_2_bannere0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Sofa hiện đại">
+					</a>
+
+					<div class="caption_banner_slide">
+						<h3>Sofa hiện đại</h3>
+						<a class="button" href="collections/all.html">Xem ngay</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="home-banner-pd">
+				<div class="block-banner-category ">
+					<a class="link-banner ratiobox" href="collections/all.html" aria-label="Banner 3">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/banner/home_category_3_bannere0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/banner/home_category_3_bannere0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Phụ kiện trang trí">
+					</a>
+
+					<div class="caption_banner_slide">
+						<h3>Phụ kiện trang trí</h3>
+						<a class="button" href="collections/all.html">Xem ngay</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="home-banner-pd">
+				<div class="block-banner-category ">
+					<a class="link-banner ratiobox" href="collections/all.html" aria-label="Banner 4">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/banner/home_category_4_bannere0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/banner/home_category_4_bannere0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Sản phẩm mới">
+					</a>
+
+					<div class="caption_banner_slide">
+						<h3>Sản phẩm mới</h3>
+						<a class="button" href="collections/all.html">Xem ngay</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="home-banner-pd">
+				<div class="block-banner-category ">
+					<a class="link-banner ratiobox" href="collections/all.html" aria-label="Banner 5">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/banner/home_category_5_bannere0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/banner/home_category_5_bannere0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Trang trí phòng tắm">
+					</a>
+
+					<div class="caption_banner_slide">
+						<h3>Trang trí phòng tắm</h3>
+						<a class="button" href="collections/all.html">Xem ngay</a>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- Nhóm 1 -->
+
+	<section class="section section-collection">
+		<div class="wrapper-heading-home animation-tran text-center">
+			<div class="container-fluid">
+				<div class="site-animation">
+					<h2>
+						<a href="collections/frontpage.html">
+
+							Sản phẩm mới
+
+						</a>
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-collection-1">
+
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="clearfix content-product-list">
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<a href="products/den-de-ban-gon-nhe-petite.html" title="Đèn để bàn gọn nhẹ Petite"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="Kem" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="Kem" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103199')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">690,000₫</span>
+
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/den-de-ban-gon-nhe-petite.html"
+												title="Đèn để bàn gọn nhẹ Petite">
+												Đèn để bàn gọn nhẹ Petite
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price ">
+												<span>690,000₫</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+
+									<div class="sold-out"><span>Hết hàng</span></div>
+
+									<a href="products/den-treo-sang-trong-hubert.html"
+										title="Đèn treo sang trọng Hubert" class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Đèn treo sang trọng Hubert " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Đèn treo sang trọng Hubert " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103202')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">1,200,000₫</span>
+
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/den-treo-sang-trong-hubert.html"
+												title="Đèn treo sang trọng Hubert">
+												Đèn treo sang trọng Hubert
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price ">
+												<span>1,200,000₫</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-21%</span></div>
+
+
+									<a href="products/ghe-go-bap-benh-iconic.html" title="Ghế gỗ bập bênh Iconic"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế gỗ bập bênh Iconic " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế gỗ bập bênh Iconic " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103203')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">700,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">890,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-go-bap-benh-iconic.html"
+												title="Ghế gỗ bập bênh Iconic">
+												Ghế gỗ bập bênh Iconic
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>700,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														890,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-20%</span></div>
+
+
+									<a href="products/ghe-phong-khach-arctander.html" title="Ghế phòng khách Arctander"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="V&#224;ng" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="V&#224;ng" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103205')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">799,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">999,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-phong-khach-arctander.html"
+												title="Ghế phòng khách Arctander">
+												Ghế phòng khách Arctander
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>799,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														999,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-8%</span></div>
+
+
+									<a href="products/ghe-sofa-giuong-keo-roots.html" title="Ghế sofa giường kéo Roots"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="X&#225;m" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="X&#225;m" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103207')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">7,200,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">7,800,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-sofa-giuong-keo-roots.html"
+												title="Ghế sofa giường kéo Roots">
+												Ghế sofa giường kéo Roots
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>7,200,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														7,800,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop  pro-loop-lastHide ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-14%</span></div>
+
+
+									<a href="products/ghe-sofa-phong-khach-s003.html" title="Ghế Sofa phòng khách S003"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="Kem" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp9-2_5cbcdc59238643d4a639ccc4278a6492_5d000b4a82804cb1a20360b63ff50829_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp9-2_5cbcdc59238643d4a639ccc4278a6492_5d000b4a82804cb1a20360b63ff50829_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp9-2_5cbcdc59238643d4a639ccc4278a6492_5d000b4a82804cb1a20360b63ff50829_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp9-2_5cbcdc59238643d4a639ccc4278a6492_5d000b4a82804cb1a20360b63ff50829_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="Kem" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103210')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">6,800,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">7,900,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-sofa-phong-khach-s003.html"
+												title="Ghế Sofa phòng khách S003">
+												Ghế Sofa phòng khách S003
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>6,800,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														7,900,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<div class="wrapper-home-banner">
+		<div class="clearfix">
+			<div class="col-xs-12 col-sm-4 col-md-4 home-banner-pd">
+				<div class="block-banner-category ratiobox">
+					<a class="link-banner" href="collections/all.html">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/category/block_home_category1e0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/category/block_home_category1e0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Khuyến mãi 1">
+					</a>
+					<div class="caption_banner">
+						<span class="subtitle">Thư giãn với</span>
+						<h3>Sofa</h3>
+
+						<a class="button" href="collections/all.html">Mua ngay</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 home-banner-pd">
+				<div class="block-banner-category ratiobox">
+					<a class="link-banner" href="collections/all.html">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/category/block_home_category2e0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/category/block_home_category2e0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Khuyến mãi 2">
+					</a>
+					<div class="caption_banner">
+						<span class="subtitle">Thiết kế hiện đại</span>
+						<h3>Modern Furniture</h3>
+
+						<a class="button" href="collections/all.html">Xem thêm</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 home-banner-pd">
+				<div class="block-banner-category ratiobox">
+					<a class="link-banner" href="collections/hot-products.html">
+						<img class="lazyload" data-sizes="auto"
+							data-src="{{url_for('static', filename='images/category/block_home_category3e0a8.jpg')}}"
+							data-lowsrc="{{url_for('static', filename='images/category/block_home_category3e0a8.jpg')}}"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							alt="Khuyến mãi 3">
+					</a>
+					<div class="caption_banner">
+						<span class="subtitle">Nội Thất Sang Trọng</span>
+						<h3>Phong Cách Hoàng Gia</h3>
+
+						<a class="button" href="collections/hot-products.html">Xem thêm</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Nhóm 2 -->
+
+	<section class="section section-collection">
+		<div class="wrapper-heading-home animation-tran text-center">
+			<div class="container-fluid">
+				<div class="site-animation">
+					<h2>
+						<a href="collections/onsale.html">
+
+							Sản phẩm bán chạy
+
+						</a>
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-collection-2">
+
+
+
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="clearfix content-product-list ">
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-29%</span></div>
+
+
+									<a href="products/am-tra-inox-khong-ghi.html" title="Ấm trà inox không ghỉ"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ấm trà inox không ghỉ " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ấm trà inox không ghỉ " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103197')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">890,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">1,250,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/am-tra-inox-khong-ghi.html" title="Ấm trà inox không ghỉ">
+												Ấm trà inox không ghỉ
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>890,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														1,250,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+
+
+
+									<a href="products/ban-xep-gon-nhe-tb01.html" title="Bàn xếp gọn nhẹ TB01"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp11-1_f33d1b5977c84d01ac0037fdcb6c7317_2430fe7863a34cbf9f2190326cd08dab_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp11-1_f33d1b5977c84d01ac0037fdcb6c7317_2430fe7863a34cbf9f2190326cd08dab_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp11-1_f33d1b5977c84d01ac0037fdcb6c7317_2430fe7863a34cbf9f2190326cd08dab_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp11-1_f33d1b5977c84d01ac0037fdcb6c7317_2430fe7863a34cbf9f2190326cd08dab_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp11-1_f33d1b5977c84d01ac0037fdcb6c7317_2430fe7863a34cbf9f2190326cd08dab_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Bàn xếp gọn nhẹ TB01 " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp11-2_d58d2329380c41f1885a093a5cf2f27c_eb50c95acadb438cbb088a454308e3ec_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp11-2_d58d2329380c41f1885a093a5cf2f27c_eb50c95acadb438cbb088a454308e3ec_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp11-2_d58d2329380c41f1885a093a5cf2f27c_eb50c95acadb438cbb088a454308e3ec_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp11-2_d58d2329380c41f1885a093a5cf2f27c_eb50c95acadb438cbb088a454308e3ec_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Bàn xếp gọn nhẹ TB01 " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103198')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">1,300,000₫</span>
+
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ban-xep-gon-nhe-tb01.html" title="Bàn xếp gọn nhẹ TB01">
+												Bàn xếp gọn nhẹ TB01
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price ">
+												<span>1,300,000₫</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+
+
+
+									<a href="products/den-de-ban-gon-nhe-petite.html" title="Đèn để bàn gọn nhẹ Petite"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="Kem" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp8-2_6a27ed54ad9849a3ae439de360094566_335fe1b291f9457b9e139fd22df5f1ac_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="Kem" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103199')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">690,000₫</span>
+
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/den-de-ban-gon-nhe-petite.html"
+												title="Đèn để bàn gọn nhẹ Petite">
+												Đèn để bàn gọn nhẹ Petite
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price ">
+												<span>690,000₫</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+
+									<div class="sold-out"><span>Hết hàng</span></div>
+
+									<a href="products/den-treo-sang-trong-hubert.html"
+										title="Đèn treo sang trọng Hubert" class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Đèn treo sang trọng Hubert " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp4-1_9ccb76a9510a4e1b9e2e4a2ab0280193_7e7cc08c1bab4fb58044c535b9755b13_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Đèn treo sang trọng Hubert " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103202')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">1,200,000₫</span>
+
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/den-treo-sang-trong-hubert.html"
+												title="Đèn treo sang trọng Hubert">
+												Đèn treo sang trọng Hubert
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price ">
+												<span>1,200,000₫</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-21%</span></div>
+
+
+									<a href="products/ghe-go-bap-benh-iconic.html" title="Ghế gỗ bập bênh Iconic"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế gỗ bập bênh Iconic " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp5-1_655fbdd6a3ba415485ec214fd2a5c4a9_df66b6586d92482aac55836c9929150b_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế gỗ bập bênh Iconic " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103203')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">700,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">890,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-go-bap-benh-iconic.html"
+												title="Ghế gỗ bập bênh Iconic">
+												Ghế gỗ bập bênh Iconic
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>700,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														890,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-20%</span></div>
+
+
+									<a href="products/ghe-phong-khach-arctander.html" title="Ghế phòng khách Arctander"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp1-1_8b56d5f805744ca98b24545ae72d3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="V&#224;ng" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp1-2_0ab2e2a624424c2a803800990fb57109_36763e8fecdd4146a12968254ae73abe_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="V&#224;ng" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103205')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">799,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">999,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-phong-khach-arctander.html"
+												title="Ghế phòng khách Arctander">
+												Ghế phòng khách Arctander
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>799,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														999,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-8%</span></div>
+
+
+									<a href="products/ghe-sofa-giuong-keo-roots.html" title="Ghế sofa giường kéo Roots"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp7-1_83fd0de6ab8b437d9b28cf50ad5e69cb_ef26305786114080bc65e3de534bfd69_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="X&#225;m" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp7-2_811c15bd83e24680ae35695c8e939f69_adcb1fa0c81e462e8d97a80a824aaf5a_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="X&#225;m" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103207')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">7,200,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">7,800,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-sofa-giuong-keo-roots.html"
+												title="Ghế sofa giường kéo Roots">
+												Ghế sofa giường kéo Roots
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>7,200,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														7,800,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+
+
+
+									<a href="products/ghe-trung-treo-oval.html" title="Ghế trứng treo Oval"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp3_97f7ec448aae411f907b7ab4d04d0e52_fc6e8187831c46299c2e264d992aa10b_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp3_97f7ec448aae411f907b7ab4d04d0e52_fc6e8187831c46299c2e264d992aa10b_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp3_97f7ec448aae411f907b7ab4d04d0e52_fc6e8187831c46299c2e264d992aa10b_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp3_97f7ec448aae411f907b7ab4d04d0e52_fc6e8187831c46299c2e264d992aa10b_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp3_97f7ec448aae411f907b7ab4d04d0e52_fc6e8187831c46299c2e264d992aa10b_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế trứng treo Oval " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp3_7641ce82bbb44d6098a62e1f19abcbc4_106bcea2d2044d62a16b15cc40331ed5_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp3_7641ce82bbb44d6098a62e1f19abcbc4_106bcea2d2044d62a16b15cc40331ed5_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp3_7641ce82bbb44d6098a62e1f19abcbc4_106bcea2d2044d62a16b15cc40331ed5_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp3_7641ce82bbb44d6098a62e1f19abcbc4_106bcea2d2044d62a16b15cc40331ed5_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế trứng treo Oval " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103212')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">1,300,000₫</span>
+
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-trung-treo-oval.html" title="Ghế trứng treo Oval">
+												Ghế trứng treo Oval
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price ">
+												<span>1,300,000₫</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+									<div class="product-sale"><span>-25%</span></div>
+
+
+									<a href="products/ghe-tua-lung-phong-khach-s004.html"
+										title="Ghế tựa lưng phòng khách S004" class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp10-1_bee2a9c0558d4324bf174ec4dca83071_d2c27994d7be4d71b388b3c9f95826c2_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp10-1_bee2a9c0558d4324bf174ec4dca83071_d2c27994d7be4d71b388b3c9f95826c2_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp10-1_bee2a9c0558d4324bf174ec4dca83071_d2c27994d7be4d71b388b3c9f95826c2_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/sp10-1_bee2a9c0558d4324bf174ec4dca83071_d2c27994d7be4d71b388b3c9f95826c2_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/sp10-1_bee2a9c0558d4324bf174ec4dca83071_d2c27994d7be4d71b388b3c9f95826c2_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="X&#225;m" />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/sp10-2_a745f85b63f5497793be87949deb1a7b_c4db0b6210d84546a55ae4a4faeaa8bf_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/sp10-2_a745f85b63f5497793be87949deb1a7b_c4db0b6210d84546a55ae4a4faeaa8bf_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/sp10-2_a745f85b63f5497793be87949deb1a7b_c4db0b6210d84546a55ae4a4faeaa8bf_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/sp10-2_a745f85b63f5497793be87949deb1a7b_c4db0b6210d84546a55ae4a4faeaa8bf_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt="X&#225;m" />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1058103213')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">2,400,000₫</span>
+										<span class="pro-price-del"><del class="compare-price">3,200,000₫</del></span>
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-tua-lung-phong-khach-s004.html"
+												title="Ghế tựa lưng phòng khách S004">
+												Ghế tựa lưng phòng khách S004
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price highlight">
+												<span>2,400,000₫</span>
+
+												<span class="pro-price-del">
+													<del class="compare-price">
+														3,200,000₫
+													</del>
+												</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-6 pro-loop  pro-loop-lastHide ">
+
+
+
+
+
+
+
+
+
+
+
+							<div class="product-block product-resize ">
+								<div class="product-img ">
+
+
+
+									<a href="products/ghe-van-phong-chan-xoay.html" title="Ghế Văn Phòng Chân Xoay"
+										class="image-resize ratiobox">
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/pro6_c3480a33e39042e599b90dfd098160df_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/pro6_c3480a33e39042e599b90dfd098160df_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/pro6_c3480a33e39042e599b90dfd098160df_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" />
+											<img class="lazyload img-loop" data-sizes="auto"
+												data-src="{{url_for('static', filename='images/products/pro6_c3480a33e39042e599b90dfd098160df_grande.jpg')}}"
+												data-lowsrc="{{url_for('static', filename='images/products/pro6_c3480a33e39042e599b90dfd098160df_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế Văn Phòng Chân Xoay " />
+										</picture>
+										<picture>
+											<source media="(max-width: 480px)"
+												data-srcset="{{url_for('static', filename='images/products/pro7_21ff79e4431748acb1004fcca2707c47_medium.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 481px) and (max-width: 767px)"
+												data-srcset="{{url_for('static', filename='images/products/pro7_21ff79e4431748acb1004fcca2707c47_large.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<source media="(min-width: 768px)"
+												data-srcset="{{url_for('static', filename='images/products/pro7_21ff79e4431748acb1004fcca2707c47_grande.jpg')}}"
+												srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+											<img class="img-loop img-hover lazyload"
+												data-src="{{url_for('static', filename='images/products/pro7_21ff79e4431748acb1004fcca2707c47_grande.jpg')}}"
+												src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+												alt=" Ghế Văn Phòng Chân Xoay " />
+										</picture>
+									</a>
+									<div class="button-add hidden">
+										<button type="submit" title="Buy now" class="action"
+											onclick="buy_now('1031712382')">Mua ngay<i
+												class="fa fa-long-arrow-right"></i></button>
+									</div>
+									<div class="pro-price-mb">
+										<span class="pro-price">969,000₫</span>
+
+									</div>
+								</div>
+								<div class="product-detail clearfix">
+									<div class="box-pro-detail">
+										<h3 class="pro-name">
+											<a href="products/ghe-van-phong-chan-xoay.html"
+												title="Ghế Văn Phòng Chân Xoay">
+												Ghế Văn Phòng Chân Xoay
+											</a>
+										</h3>
+										<div class="box-pro-prices">
+											<p class="pro-price ">
+												<span>969,000₫</span>
+
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<div class="wrapper-home-information animation-tran">
+		<div class="container-fluid">
+			<div class="flex-container-information">
+				<div class="col-md-6 col-sm-12 col-xs-12 wrap-pd-infor wrap-flex-align flex-column box_stick">
+					<div class="box-banner-inf">
+						<div class="content site-animation">
+							<h2 class="title dark">Về chúng tôi</h2>
+
+							<a class="button" href="pages/about-us.html" title="Xem ngay">
+								<span>Xem ngay</span>
+							</a>
+
+						</div>
+					</div>
+					<div class="container-background">
+						<img class="lazyload"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+							data-src="{{url_for('static', filename='images/other/home_about_image.jpg')}}"
+							alt="Về chúng tôi">
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 wrap-pd-infor wrap-flex-align flex-column">
+					<div class="inf-content site-animation">
+						<p>Trang giới thiệu giúp khách hàng hiểu rõ hơn về cửa hàng của bạn. Hãy cung cấp thông
+							tin cụ thể về việc kinh doanh, về cửa hàng, thông tin liên hệ. Điều này sẽ giúp
+							khách hàng cảm thấy tin tưởng khi mua hàng trên website của bạn.</p>
+						<p>Một vài gợi ý cho nội dung trang Giới thiệu:</p>
+						<div>
+							<ul>
+								<li>Bạn là ai</li>
+								<li>Giá trị kinh doanh của bạn là gì</li>
+								<li>Địa chỉ cửa hàng</li>
+								<li>Bạn đã kinh doanh trong ngành hàng này bao lâu rồi</li>
+								<li>Bạn kinh doanh ngành hàng online được bao lâu</li>
+								<li>Đội ngũ của bạn gồm những ai</li>
+								<li>Thông tin liên hệ</li>
+								<li>Liên kết đến các trang mạng xã hội (Twitter, Facebook)</li>
+							</ul>
+						</div>
+						<p>Bạn có thể chỉnh sửa hoặc xoá bài viết này tại <a
+								href="https://modern-furniture.myharavan.com/admin/sale_channels/web/Account/Login?ReturnUrl=%2Fadmin%2Fsale_channels%2Fweb%2Fpages%2F1000592449"><strong>đây</strong></a>
+							hoặc thêm những bài viết mới trong phần quản lý <a
+								href="https://modern-furniture.myharavan.com/admin/sale_channels/web/Account/Login?ReturnUrl=%2Fadmin%2Fsale_channels%2Fweb%2Fpages_new"><strong>Trang
+									nội dung</strong></a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}
